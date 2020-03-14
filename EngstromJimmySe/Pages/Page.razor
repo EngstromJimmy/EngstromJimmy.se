@@ -1,0 +1,34 @@
+﻿@page "/{page}"
+@using Markdig;
+@using System.IO;
+@using Microsoft.DocAsCode.MarkdigEngine.Extensions;
+@using Markdig.Syntax;
+@using Markdig.Renderers.Html;
+@using Markdig.Extensions.MediaLinks;
+@using Markdig.Parsers;
+@using Markdig.Renderers;
+@using Markdig.Extensions.Yaml;
+@using YamlDotNet.Serialization;
+@using YamlDotNet.Serialization.NamingConventions;
+@using YamlDotNet.Core;
+@using YamlDotNet.Core.Events;
+@using EngstromJimmySe.Services;
+
+@inject BlogService blogService
+
+@((MarkupString)post.Content)
+
+@code {
+    [Parameter] public string page { get; set; }
+    BlogPost post { get; set; } = new BlogPost();
+    protected async override Task OnParametersSetAsync()
+    {
+        post = await blogService.GetPostAsync(page ?? "Index");
+        await base.OnParametersSetAsync();
+    }
+    
+
+
+
+
+}

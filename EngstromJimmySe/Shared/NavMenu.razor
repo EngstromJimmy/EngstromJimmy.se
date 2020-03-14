@@ -1,0 +1,64 @@
+﻿@inject NavigationManager navmanager;
+@using System.ComponentModel.DataAnnotations;
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/Images/jimmy.png" height="35" /> Jimmy Engström</a>
+
+
+        <button class="navbar-toggler" type="button" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="@NavMenuCssClass navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/Posts">Blog</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/Speaker">Speaker</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/Podcast">Podcast</NavLink>
+                </li>
+            </ul>
+        
+
+        <div class="social">
+            <a href="http://www.twitter.com/engstromjimmy" class="fab fa-twitter"></a>
+            <a href="https://www.facebook.com/Apeoholic" class="fab fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/engstromjimmy/" class="fab fa-linkedin"></a>
+        </div>
+
+            <EditForm Model="model" OnValidSubmit="Search" class="form-inline my-2 my-lg-0">
+                <InputText @bind-Value="@model.SearchTerm" class="form-control mr-sm-2" placeholder="Search" />
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </EditForm>
+        </div>
+   </nav>
+
+@code {
+
+    SearchModel model = new SearchModel();
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private string SocialCssClass => collapseNavMenu ? "" : "collapse";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void Search()
+    {
+        navmanager.NavigateTo($"/posts/{model.SearchTerm}", true);
+    }
+
+    protected class SearchModel
+    {
+        [Required]
+        public string SearchTerm { get; set; }
+    }
+}

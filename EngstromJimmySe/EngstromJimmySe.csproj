@@ -1,0 +1,207 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\StyleSheet.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="Styles\bootstrap-4.4.1\.github\CODEOWNERS" />
+    <None Include="Styles\bootstrap-4.4.1\.github\CONTRIBUTING.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\ISSUE_TEMPLATE\bug.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\ISSUE_TEMPLATE\feature.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\SUPPORT.md" />
+    <None Include="Styles\bootstrap-4.4.1\.github\workflows\test.yml" />
+    <None Include="wwwroot\PostImages\1illzw1e.4g4.png" />
+    <None Include="wwwroot\PostImages\1s44zvu0.z3b.png" />
+    <None Include="wwwroot\PostImages\1twju14e.rh2.png" />
+    <None Include="wwwroot\PostImages\2008\8\07-1024-PetComedy2_72dpi.jpg" />
+    <None Include="wwwroot\PostImages\2008\8\biljetter.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\comedypet.jpg" />
+    <None Include="wwwroot\PostImages\2008\8\comment.gif" />
+    <None Include="wwwroot\PostImages\2008\8\Copy of IMG_1096.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\Copy of IMG_1136.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\IMG_0012.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\IMG_0301.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\monopol.png" />
+    <None Include="wwwroot\PostImages\2008\8\newyorksteak.JPG" />
+    <None Include="wwwroot\PostImages\2008\8\Surface.jpg" />
+    <None Include="wwwroot\PostImages\2008\8\travel.jpg" />
+    <None Include="wwwroot\PostImages\2008\8\untitled.bmp" />
+    <None Include="wwwroot\PostImages\2008\8\zune.jpg" />
+    <None Include="wwwroot\PostImages\2008\9\Copy of IMG_0088.JPG" />
+    <None Include="wwwroot\PostImages\2008\9\groda.jpg" />
+    <None Include="wwwroot\PostImages\2008\9\ismakin.JPG" />
+    <None Include="wwwroot\PostImages\2009\3\BattlestarAnaglyph.jpg" />
+    <None Include="wwwroot\PostImages\2009\3\BattlestarAnaglyphsmall.jpg" />
+    <None Include="wwwroot\PostImages\2009\3\bsgcake.jpg" />
+    <None Include="wwwroot\PostImages\2009\3\bsgcake.png" />
+    <None Include="wwwroot\PostImages\2009\3\bsgcakesmall.jpg" />
+    <None Include="wwwroot\PostImages\2009\3\eyeofjupiterchocolate3.jpg" />
+    <None Include="wwwroot\PostImages\2009\3\eyeofjupiterchocolate3.png" />
+    <None Include="wwwroot\PostImages\2009\5\bk.jpg" />
+    <None Include="wwwroot\PostImages\2009\5\eye.jpg" />
+    <None Include="wwwroot\PostImages\2009\8\tdd.jpg" />
+    <None Include="wwwroot\PostImages\2009\8\tdd.snippet" />
+    <None Include="wwwroot\PostImages\2011\07\admin menu.PNG" />
+    <None Include="wwwroot\PostImages\2011\07\background2.PNG" />
+    <None Include="wwwroot\PostImages\2011\4\AppbarHelperSample.zip" />
+    <None Include="wwwroot\PostImages\2011\4\AppbarHelperSample.zipOld" />
+    <None Include="wwwroot\PostImages\2011\7\AugmentedRealityDemo.zip" />
+    <None Include="wwwroot\PostImages\2011\7\JointExtensions.zip" />
+    <None Include="wwwroot\PostImages\2012\10\IMG_0701.JPG" />
+    <None Include="wwwroot\PostImages\2012\10\IMG_0725.JPG" />
+    <None Include="wwwroot\PostImages\2012\10\IMG_0783.JPG" />
+    <None Include="wwwroot\PostImages\2012\10\IMG_0784.JPG" />
+    <None Include="wwwroot\PostImages\2012\10\IMG_0785.JPG" />
+    <None Include="wwwroot\PostImages\2012\10\Que.jpg" />
+    <None Include="wwwroot\PostImages\2013\4\Logo.scale-100.png" />
+    <None Include="wwwroot\PostImages\2013\5\AppLogo.png" />
+    <None Include="wwwroot\PostImages\2013\5\SmallLogo.png" />
+    <None Include="wwwroot\PostImages\2013\5\StoreLogo.png" />
+    <None Include="wwwroot\PostImages\2013\5\TileLarge.png" />
+    <None Include="wwwroot\PostImages\2014\06\BatteryDemo.zip" />
+    <None Include="wwwroot\PostImages\2015\05\Build2015.ps1" />
+    <None Include="wwwroot\PostImages\2016\02\KinectRobosapien.zip" />
+    <None Include="wwwroot\PostImages\2016\07\clip_image001.png" />
+    <None Include="wwwroot\PostImages\2016\07\clip_image002.png" />
+    <None Include="wwwroot\PostImages\2016\07\clip_image003.gif" />
+    <None Include="wwwroot\PostImages\2016\07\clip_image004.png" />
+    <None Include="wwwroot\PostImages\2016\09\yzuxsdvl.lse.png" />
+    <None Include="wwwroot\PostImages\2016\09\zpbh3byk.jhh.png" />
+    <None Include="wwwroot\PostImages\2zt3tfxr.srs.png" />
+    <None Include="wwwroot\PostImages\5j2ncynq.1sb.png" />
+    <None Include="wwwroot\PostImages\5vqswern.si1.png" />
+    <None Include="wwwroot\PostImages\aucudi43.piw.png" />
+    <None Include="wwwroot\PostImages\bw052qg5.hlk.png" />
+    <None Include="wwwroot\PostImages\d2tatgdx.e4x.png" />
+    <None Include="wwwroot\PostImages\e0fbpc2n.gng.png" />
+    <None Include="wwwroot\PostImages\erui1aqp.lmc.png" />
+    <None Include="wwwroot\PostImages\GadgetZX.png" />
+    <None Include="wwwroot\PostImages\GadgetZX_thumb.png" />
+    <None Include="wwwroot\PostImages\i53dr0mb.g3d.png" />
+    <None Include="wwwroot\PostImages\ifzp5pw0.qin.png" />
+    <None Include="wwwroot\PostImages\image.png" />
+    <None Include="wwwroot\PostImages\image_1.png" />
+    <None Include="wwwroot\PostImages\image_10.png" />
+    <None Include="wwwroot\PostImages\image_11.png" />
+    <None Include="wwwroot\PostImages\image_12.png" />
+    <None Include="wwwroot\PostImages\image_13.png" />
+    <None Include="wwwroot\PostImages\image_14.png" />
+    <None Include="wwwroot\PostImages\image_15.png" />
+    <None Include="wwwroot\PostImages\image_16.png" />
+    <None Include="wwwroot\PostImages\image_17.png" />
+    <None Include="wwwroot\PostImages\image_18.png" />
+    <None Include="wwwroot\PostImages\image_19.png" />
+    <None Include="wwwroot\PostImages\image_2.png" />
+    <None Include="wwwroot\PostImages\image_20.png" />
+    <None Include="wwwroot\PostImages\image_21.png" />
+    <None Include="wwwroot\PostImages\image_22.png" />
+    <None Include="wwwroot\PostImages\image_23.png" />
+    <None Include="wwwroot\PostImages\image_24.png" />
+    <None Include="wwwroot\PostImages\image_25.png" />
+    <None Include="wwwroot\PostImages\image_26.png" />
+    <None Include="wwwroot\PostImages\image_3.png" />
+    <None Include="wwwroot\PostImages\image_4.png" />
+    <None Include="wwwroot\PostImages\image_5.png" />
+    <None Include="wwwroot\PostImages\image_6.png" />
+    <None Include="wwwroot\PostImages\image_7.png" />
+    <None Include="wwwroot\PostImages\image_8.png" />
+    <None Include="wwwroot\PostImages\image_9.png" />
+    <None Include="wwwroot\PostImages\image_thumb.png" />
+    <None Include="wwwroot\PostImages\image_thumb[1].png" />
+    <None Include="wwwroot\PostImages\image_thumb[1]_thumb.png" />
+    <None Include="wwwroot\PostImages\image_thumb_1.png" />
+    <None Include="wwwroot\PostImages\image_thumb_10.png" />
+    <None Include="wwwroot\PostImages\image_thumb_11.png" />
+    <None Include="wwwroot\PostImages\image_thumb_12.png" />
+    <None Include="wwwroot\PostImages\image_thumb_13.png" />
+    <None Include="wwwroot\PostImages\image_thumb_14.png" />
+    <None Include="wwwroot\PostImages\image_thumb_15.png" />
+    <None Include="wwwroot\PostImages\image_thumb_16.png" />
+    <None Include="wwwroot\PostImages\image_thumb_17.png" />
+    <None Include="wwwroot\PostImages\image_thumb_18.png" />
+    <None Include="wwwroot\PostImages\image_thumb_19.png" />
+    <None Include="wwwroot\PostImages\image_thumb_2.png" />
+    <None Include="wwwroot\PostImages\image_thumb_20.png" />
+    <None Include="wwwroot\PostImages\image_thumb_21.png" />
+    <None Include="wwwroot\PostImages\image_thumb_22.png" />
+    <None Include="wwwroot\PostImages\image_thumb_23.png" />
+    <None Include="wwwroot\PostImages\image_thumb_24.png" />
+    <None Include="wwwroot\PostImages\image_thumb_25.png" />
+    <None Include="wwwroot\PostImages\image_thumb_26.png" />
+    <None Include="wwwroot\PostImages\image_thumb_3.png" />
+    <None Include="wwwroot\PostImages\image_thumb_4.png" />
+    <None Include="wwwroot\PostImages\image_thumb_5.png" />
+    <None Include="wwwroot\PostImages\image_thumb_6.png" />
+    <None Include="wwwroot\PostImages\image_thumb_7.png" />
+    <None Include="wwwroot\PostImages\image_thumb_8.png" />
+    <None Include="wwwroot\PostImages\image_thumb_9.png" />
+    <None Include="wwwroot\PostImages\kagflyvv.si1.png" />
+    <None Include="wwwroot\PostImages\kkg5k3kd.bsr.png" />
+    <None Include="wwwroot\PostImages\kklcdpho.o4d.png" />
+    <None Include="wwwroot\PostImages\lfic1itl.yd2.png" />
+    <None Include="wwwroot\PostImages\n0swajhr.pwd.png" />
+    <None Include="wwwroot\PostImages\ozkclujk.jtu.png" />
+    <None Include="wwwroot\PostImages\Pier39_stitch.jpg" />
+    <None Include="wwwroot\PostImages\Pier39_stitch_1.jpg" />
+    <None Include="wwwroot\PostImages\Pier39_stitch_2.jpg" />
+    <None Include="wwwroot\PostImages\Pier39_stitch_3.jpg" />
+    <None Include="wwwroot\PostImages\Pier39_stitch_thumb.jpg" />
+    <None Include="wwwroot\PostImages\Pier39_stitch_thumb_1.jpg" />
+    <None Include="wwwroot\PostImages\pycit5dj.d1t.png" />
+    <None Include="wwwroot\PostImages\qde10ovh.2i1.png" />
+    <None Include="wwwroot\PostImages\qwaz32hg.pqu.png" />
+    <None Include="wwwroot\PostImages\rnkkthzo.khd.png" />
+    <None Include="wwwroot\PostImages\ucyqjz5z.p0d.png" />
+    <None Include="wwwroot\PostImages\vrabm1bc.xu4.png" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\038a40f73267.NETRocksmugg\334CDECF\mugsmall_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\038a40f73267.NETRocksmugg\4595A591\mugsmall.jpg" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\OldapaketfrnMicrosoft\29F91341\geekarc.png" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\OldapaketfrnMicrosoft\62A3BD4E\geekarc_thumb.png" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\ZXSpectrumemulatorfrWindowsPhoneSeries7\1F1B50F8\spectrum2.jpg" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\ZXSpectrumemulatorfrWindowsPhoneSeries7\30F7E4C5\spectrum2_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\ZXSpectrumemulatorfrWindowsPhoneSeries7\3F365DB5\spectrum1_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WindowsLiveWriter\ZXSpectrumemulatorfrWindowsPhoneSeries7\5DB0C46B\spectrum1.jpg" />
+    <None Include="wwwroot\PostImages\wlEmoticon-openmouthedsmile.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-openmouthedsmile_1.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smile.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smilewithtongueout.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smilewithtongueout_1.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smilewithtongueout_2.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smilewithtongueout_3.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-smilewithtongueout_4.png" />
+    <None Include="wwwroot\PostImages\wlEmoticon-winkingsmile.png" />
+    <None Include="wwwroot\PostImages\wp21jcyb.nzc.png" />
+    <None Include="wwwroot\PostImages\WP_20130602_001.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_001_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_002.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_002_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_004.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_004_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_008.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_008_thumb.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_010.jpg" />
+    <None Include="wwwroot\PostImages\WP_20130602_010_thumb.jpg" />
+    <None Include="wwwroot\PostImages\ydjxgphs.khe.png" />
+    <None Include="wwwroot\PostImages\yo13nkp0.30s.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig.SyntaxHighlighting" Version="1.1.7" />
+    <PackageReference Include="Microsoft.DocAsCode.MarkdigEngine.Extensions" Version="2.50.0" />
+    <PackageReference Include="YamlDotNet" Version="8.1.0" />
+  </ItemGroup>
+
+</Project>

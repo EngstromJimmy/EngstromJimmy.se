@@ -1,0 +1,68 @@
+﻿@page "/Post/{id}"
+@page "/{category}/{year}/{month}/{day}/{postname}"
+@page "/{category}/{category2}/{year}/{month}/{day}/{postname}"
+@using Markdig;
+@using System.IO;
+@using Microsoft.DocAsCode.MarkdigEngine.Extensions;
+@using Markdig.Syntax;
+@using Markdig.Renderers.Html;
+@using Markdig.Extensions.MediaLinks;
+@using Markdig.Parsers;
+@using Markdig.Renderers;
+@using Markdig.Extensions.Yaml;
+@using YamlDotNet.Serialization;
+@using YamlDotNet.Serialization.NamingConventions;
+@using YamlDotNet.Core;
+@using YamlDotNet.Core.Events;
+@using EngstromJimmySe.Services;
+@inject IJSRuntime JSRuntime;
+
+@inject BlogService blogService
+
+<h1>@((MarkupString)post.Title)</h1>
+@post.Date.ToString("yyyy-MM-dd") 
+<text> by </text> 
+@post.Author
+
+@((MarkupString)post.Content)
+
+@code {
+    [Parameter] public string id { get; set; }
+    [Parameter] public string category { get; set; }
+    [Parameter] public string category2 { get; set; }
+    [Parameter] public string year { get; set; }
+    [Parameter] public string month { get; set; }
+    [Parameter] public string day { get; set; }
+    [Parameter] public string postname { get; set; }
+    [Parameter] public string html { get; set; }
+    BlogPost post { get; set; } = new BlogPost();
+    protected async override Task OnInitializedAsync()
+    {
+        if (category != null)
+        {
+            id = $"{postname.Replace(".html", "")}";
+        }
+
+
+        post = await blogService.GetPostAsync(id, category != null);
+
+
+
+
+        await base.OnInitializedAsync();
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+
+        if (firstRender)
+        {
+            JSRuntime.InvokeVoidAsync("InitHighlight");
+
+        }
+        base.OnAfterRender(firstRender);
+    }
+
+
+}
