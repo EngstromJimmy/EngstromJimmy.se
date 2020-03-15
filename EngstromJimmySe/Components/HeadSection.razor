@@ -11,8 +11,12 @@
             object oid;
             if(routeData.RouteValues.TryGetValue("id", out oid))
             {
-                var post=blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
-                title = post.Title;
+                try
+                {
+                    var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
+                    title = post.Title;
+                }
+                catch { }
             }
 
 

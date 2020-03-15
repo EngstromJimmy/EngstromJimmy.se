@@ -28,6 +28,7 @@ namespace EngstromJimmySe
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddServerSideBlazor();
             services.AddSingleton<BlogService>();
             services.AddScoped<AppStateService>();
@@ -51,9 +52,10 @@ namespace EngstromJimmySe
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("Rss", "{controller=Feed}/{action=Rss}");
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
