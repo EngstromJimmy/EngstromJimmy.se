@@ -1,4 +1,4 @@
-﻿@page "/{page}"
+﻿@page "/{id}"
 @using Markdig;
 @using System.IO;
 @using Microsoft.DocAsCode.MarkdigEngine.Extensions;
@@ -19,11 +19,11 @@
 @((MarkupString)post.Content)
 
 @code {
-    [Parameter] public string page { get; set; }
+    [Parameter] public string id { get; set; }
     BlogPost post { get; set; } = new BlogPost();
     protected async override Task OnParametersSetAsync()
     {
-        post = await blogService.GetPostAsync(page ?? "Index");
+        post = await blogService.GetPostAsync(id ?? "Index");
 
 
         await base.OnParametersSetAsync();

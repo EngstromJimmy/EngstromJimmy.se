@@ -13,7 +13,6 @@
             {
                 var post=blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
                 title = post.Title;
-
             }
 
 
@@ -61,7 +60,7 @@
 @code {
 
     public string id { get; set; }
-    string title = "";
+    string title = "EngstromJimmy.se";
     protected override async Task OnInitializedAsync()
     {
         appstate.PropertyChanged += (object sender, PropertyChangedEventArgs e) =>
