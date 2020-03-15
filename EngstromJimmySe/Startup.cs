@@ -30,6 +30,7 @@ namespace EngstromJimmySe
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<BlogService>();
+            services.AddScoped<AppStateService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

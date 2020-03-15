@@ -12,10 +12,10 @@
 @using YamlDotNet.Serialization.NamingConventions;
 @using YamlDotNet.Core;
 @using YamlDotNet.Core.Events;
+
 @using EngstromJimmySe.Services;
 
 @inject BlogService blogService
-
 @((MarkupString)post.Content)
 
 @code {
@@ -24,9 +24,11 @@
     protected async override Task OnParametersSetAsync()
     {
         post = await blogService.GetPostAsync(page ?? "Index");
+
+
         await base.OnParametersSetAsync();
     }
-    
+
 
 
 

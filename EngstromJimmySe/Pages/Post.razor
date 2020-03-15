@@ -16,12 +16,14 @@
 @using YamlDotNet.Core.Events;
 @using EngstromJimmySe.Services;
 @inject IJSRuntime JSRuntime;
+@inject AppStateService appstate
+        
 
 @inject BlogService blogService
 
 <h1>@((MarkupString)post.Title)</h1>
-@post.Date.ToString("yyyy-MM-dd") 
-<text> by </text> 
+@post.Date.ToString("yyyy-MM-dd")
+<text> by </text>
 @post.Author
 
 @((MarkupString)post.Content)
@@ -46,7 +48,7 @@
 
         post = await blogService.GetPostAsync(id, category != null);
 
-
+        appstate.Title = post.Title;
 
 
         await base.OnInitializedAsync();
