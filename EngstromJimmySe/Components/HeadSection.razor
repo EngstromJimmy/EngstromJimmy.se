@@ -11,13 +11,15 @@
             object oid;
             if(routeData.RouteValues.TryGetValue("id", out oid))
             {
-                id = oid.ToString();
+                var post=blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
+                title = post.Title;
+
             }
 
 
         }
         <!--Whatever tags you want-->
-        <title>@appstate.Title</title>
+        <title>@title</title>
         <!-- COMMON TAGS -->
         <meta charset="utf-8">
         <!-- Search Engine -->
@@ -29,15 +31,15 @@
         <meta itemprop="image" content="http://engstromjimmy.se/images/jimmy.png">
         <!-- Twitter -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="@appstate.Title">
-        <meta name="twitter:description" content="@appstate.Title">
+        <meta name="twitter:title" content="@title">
+        <meta name="twitter:description" content="@title">
         <meta name="twitter:site" content="@@Engstromjimmy">
         <meta name="twitter:creator" content="@@Engstromjimmy">
         <meta name="twitter:image:src" content="http://engstromjimmy.se/images/jimmy.png">
         <!-- Twitter - Article -->
         <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-        <meta name="og:title" content="@appstate.Title">
-        <meta name="og:description" content="@appstate.Title">
+        <meta name="og:title" content="@title">
+        <meta name="og:description" content="@title">
         <meta name="og:image" content="http://engstromjimmy.se/images/jimmy.png">
         <meta name="og:url" content="http://engstromjimmy.se">
         <meta name="og:site_name" content="engstromjimmy.se">
@@ -59,7 +61,7 @@
 @code {
 
     public string id { get; set; }
-    BlogPost post = new BlogPost();
+    string title = "";
     protected override async Task OnInitializedAsync()
     {
         appstate.PropertyChanged += (object sender, PropertyChangedEventArgs e) =>
@@ -70,20 +72,6 @@
             });
         };
         await base.OnInitializedAsync();
-    }
-
-    protected async override void OnAfterRender(bool firstRender)
-    {
-
-        if (id != null && firstRender)
-        {
-            post = await blogService.GetPostAsync(id.ToString());
-            appstate.Title = post.Title;
-            StateHasChanged();
-        }
-    
-
-        base.OnAfterRender(firstRender);
     }
 
 }
