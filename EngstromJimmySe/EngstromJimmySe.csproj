@@ -204,4 +204,202 @@
     <PackageReference Include="YamlDotNet" Version="8.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Posts\2010-10-16-First-post.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2010-10-20-Comparison-chart-of-Windows-Phones-to-be-released-in-Sweden.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2010-12-14-Using-unlocked-phone-from-Tre-and-mms.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-02-07-Day-1-with-Netduino.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-02-11-Connecting-netduino-to-a-lcd-display.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-02-12-netduino-and-blinkm.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-04-11-translating-an-application-bar-in-wp7.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-07-03-Kinect-Extensions.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-07-04-Kinect-2b-Robosapien-3d-3c3.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-07-10-Augmented-reality-zx-spectrum.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-07-12-Augmented-Reality-demo-with-SilverlightXNA.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-07-21-Augmented-reality-zx-spectrum-part-2.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-08-29-The-Wp7-Motion-api-part-1.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-09-15-Windows-8-on-a-HP-TouchSmart-TX2.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-09-30-How-to-use-BingMapsDirectionsTask.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-09-30-The-Wp7-Motion-api-part-2.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-10-02-Testing-upgrade-before-submitting.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-10-17-gadgeteer-first-impressions.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-10-17-Testing-the-Nuance-dictation.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-10-17-ZX-Spectrum-emulator-running-on-Gadgeteer.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2011-11-19-Our-Kinect-Controlled-livingroom.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-03-22-Getting-windows-azure-accelerator-for-web-roles-to-work.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-07-15-Monogame.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-07-31-gridview-ItemClick-Command.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-10-15-Welcome-to-BlogEngineNET-27.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-10-27-Getting-Surface.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-10-31-Windows-Phone-8-SDK-IPv4-Problem.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2012-12-29-Windows-8-Stricter-markets.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-06-02-changing-the-cover-on-a-Nokia-Lumia-920.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-06-25-Build-2013-e28093-registration-day.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-06-27-Build-2013-Day-one.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-07-08-watching-all-videos-from-build-2013.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-07-31-ZX-Spectrum-emulator-running-e2809cone2809d-a-Agent-smartwatch.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-11-04-The-secrets-that-makes-a-good-developer-awesome.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-11-13-Controlling-a-Bluetooth-car-with-a-Windows-Phone.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-11-20-Building-your-own-Lego-Mindstorms-EV3-Windows-Phone-app.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2013-12-06-Developer-Christmas-list.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-01-12-RC-API-now-available.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-01-12-Using-RC-API-on-Windows-8.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-01-12-Using-RC-API-on-Windows-Phone.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-02-03-Using-Visual-Studio-2013-as-an-external-editor-with-Unity-3D.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-04-06-Download-all-the-videos-from-Build-2014.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-04-14-Universal-Apps-and-Live-Tiles.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-04-14-Universal-apps-and-NotificationsExtensions.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-04-14-Universal-apps-and-Toasts.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-05-04-Windows-phone-81-and-Bluetooth-LE-Getting-started.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-06-06-Controlling-an-iKettle-with-Windows-phone.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2014-06-09-Universal-apps-and-Bluetooth-LE-Battery-Service.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2015-05-11-Download-all-the-videos-from-Build-2015.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2016-07-10-HoloToolkit.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2016-07-27-setting-up-a-hololens-unity-project.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2016-08-29-Lets-AllJoyn-in-the-fun-of-iot.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2016-09-04-BLE-and-Azure-IoT-Hub.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2016-09-19-Setting up source control for a HoloLens Unity project.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2018-01-05-Pluralisation-for-EF-core.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2018-04-10-EFCorePluralizazionNuget.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2019-07-31-XamarinTizen.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2020-03-11-ChangeTitle.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2020-03-14-ReloadBlazor.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Index.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Podcast.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Snippets\2020-04-14 Reload Blazor\ReloadBlazor.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Snippets\Test\code.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Speaker.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\Test.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
