@@ -30,7 +30,7 @@ namespace EngstromJimmySe.Controllers
             feed.Copyright = new TextSyndicationContent(appStateService.Configuration.FeedCopyright);
             var items = new List<SyndicationItem>();
             var postings = await blogService.GetPostsAsync();
-            foreach (var item in postings)
+            foreach (var item in postings.Take(10))
             {
                 var postUrl = appStateService.Configuration.FeedSiteUrl + "/" +  item.PermaLink;
                 var title = item.Title;
