@@ -11,6 +11,7 @@ hide: false
 
 I recently started working with .NET Core and I didn't like that Microsoft removed the automatic pluralization/singularization of classes and collection in Entity Framework Core.
 They did however give us the opportunity to hook in our own.
+
 This is talked about in this [StackOverflow post](https://stackoverflow.com/questions/39281647/entityframework-core-database-first-approach-pluralizing-table-names/47410837#47410837)
 
 

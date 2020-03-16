@@ -9,6 +9,7 @@ hide: false
 ---
 You can create apps for HoloLens by using UWP (ordinary 2D apps), you can also make 3D apps by using tools like Unity.   
 This post will cover what you need to do to setup a Unity project to work on HoloLens.   
+
 &nbsp;   
 I have had the opportunity to work with HoloLens for a while now and I should share some of my tips and tricks.   
 

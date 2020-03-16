@@ -14,9 +14,10 @@ hide: false
 A couple of years ago I bought a Samsung Gear S3 watch (now rebranded as Samsung Galaxy Watch).   
 It was one feature in particular that I thought was the most important one, I should be able to develop for it.   
 I had heard that Xamarin was working on Tizen templates so the choice was easy.   
+
 It took a couple of years until Xamarin support for the watch came out and by then I had other ongoing development projects.   
 But I recently decided to revisit this and see how hard it would be to develop a simple Hello World application, it wasn&#39;t as straight forward as I would have hoped, and I decided to write this post to help others get started.   
-&nbsp;   
+
 
 ### Getting Visual Studio up and running    
 

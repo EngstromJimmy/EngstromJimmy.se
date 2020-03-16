@@ -14,7 +14,7 @@ hide: false
 When source controlling your Unity HoloLens project there is no reason to save the generated code since it is generated =)   
 Unity won&#39;t replace some of the generated files so if you for example change icons/tiles in the Unity project, those part will not be replaced when generating the code again.   
 A good practice is to export to new folders every time.   
-&nbsp;   
+
 
 ### .Gitignore
 

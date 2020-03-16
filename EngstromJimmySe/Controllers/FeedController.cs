@@ -32,9 +32,9 @@ namespace EngstromJimmySe.Controllers
             var postings = await blogService.GetPostsAsync();
             foreach (var item in postings)
             {
-                var postUrl = item.PermaLink;
+                var postUrl = appStateService.Configuration.FeedSiteUrl +  item.PermaLink;
                 var title = item.Title;
-                var description = item.Content;
+                var description = item.GetFirstParagraph();
                 items.Add(new SyndicationItem(title, description, new Uri(postUrl,UriKind.Relative), item.PermaLink, item.Date));
             }
 
