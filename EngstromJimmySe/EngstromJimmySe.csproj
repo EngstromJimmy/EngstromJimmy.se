@@ -206,6 +206,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="config.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Posts\2010-10-16-First-post.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
