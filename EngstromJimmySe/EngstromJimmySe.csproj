@@ -199,10 +199,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.18.3" />
     <PackageReference Include="Markdig.SyntaxHighlighting" Version="1.1.7" />
-    <PackageReference Include="Microsoft.DocAsCode.MarkdigEngine.Extensions" Version="2.50.0" />
     <PackageReference Include="System.ServiceModel.Syndication" Version="4.7.0" />
     <PackageReference Include="YamlDotNet" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Extensions">
+      <HintPath>..\..\..\..\Users\jimmy\Downloads\docfx-dev\docfx-dev\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\bin\Debug\netstandard2.0\Microsoft.DocAsCode.MarkdigEngine.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Validators">
+      <HintPath>..\..\..\..\Users\jimmy\Downloads\docfx-dev\docfx-dev\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\bin\Debug\netstandard2.0\Microsoft.DocAsCode.MarkdigEngine.Validators.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -383,7 +392,10 @@
     <None Update="Posts\2020-03-11-ChangeTitle.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Posts\2020-03-14-ReloadBlazor.md">
+    <None Update="Posts\2020-03-14-ReloadBlazor - Copy.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2020-03-21-UsingHighchartsWithBlazor.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Posts\Index.md">
@@ -404,6 +416,10 @@
     <None Update="Posts\Test.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\PostImages\2020-03-21-UsingHighchartsWithBlazor\" />
   </ItemGroup>
 
 </Project>

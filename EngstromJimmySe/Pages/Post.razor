@@ -18,7 +18,7 @@
 
 @inject IJSRuntime JSRuntime;
 @inject AppStateService appstate
-        
+
 
 @inject BlogService blogService
 
@@ -26,6 +26,11 @@
 @post.Date.ToString("yyyy-MM-dd")
 <text> by </text>
 @post.Author
+
+@if (!string.IsNullOrEmpty(post.Image))
+{
+    <img class="" src="@post.Image">
+}
 
 @((MarkupString)post.Content)
 

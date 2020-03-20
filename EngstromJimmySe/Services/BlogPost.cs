@@ -9,6 +9,7 @@ namespace EngstromJimmySe.Services
     public class BlogPost
     {
         public string Title { get; set; }
+        public string Image { get; set; }
         public string PermaLink { get; set; }
         public DateTime Date { get; set; }
         public string Content { get; set; }

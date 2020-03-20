@@ -8,43 +8,47 @@
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
         @{
-            object oid;
-            if (routeData.RouteValues.TryGetValue("id", out oid))
-            {
-                try
+                object oid;
+                if (routeData.RouteValues.TryGetValue("id", out oid))
                 {
-                    var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
-                    title = post.Title;
-                    content = post.GetFirstParagraph();
-                    date = post.Date.ToUniversalTime().ToString();
+                    try
+                    {
+                        var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
+                        title = post.Title;
+                        content = post.GetFirstParagraph();
+                        date = post.Date.ToUniversalTime().ToString();
+                        if(!string.IsNullOrEmpty(post.Image))
+                        {
+                            image = post.Image;
+                        }
+                    }
+                    catch { }
                 }
-                catch { }
+
+
             }
-
-
-        }
-        <!--Whatever tags you want-->
+            <!--Whatever tags you want-->
         <title>@title</title>
         <!-- COMMON TAGS -->
         <meta charset="utf-8">
         <!-- Search Engine -->
-        <meta name="image" content="http://engstromjimmy.se/images/jimmy.png" />
+        <meta name="image" content= "@image" />
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="@title" />
         <meta itemprop="description" content="@content" />
-        <meta itemprop="image" content="http://engstromjimmy.se/images/jimmy.png" />
+        <meta itemprop="image" content= "@image" />
         <!-- Twitter -->
         <meta name="twitter:card" content="@content" />
         <meta name="twitter:title" content="@title" />
         <meta name="twitter:description" content="@title" />
         <meta name="twitter:site" content="@@Engstromjimmy" />
         <meta name="twitter:creator" content="@@Engstromjimmy" />
-        <meta name="twitter:image:src" content="http://engstromjimmy.se/images/jimmy.png" />
+        <meta name="twitter:image:src" content="@image" />
         <!-- Twitter - Article -->
         <!-- Open Graph general (Facebook, Pinterest & Google+) -->
         <meta property="og:title" content="@title" />
         <meta property="og:description" content="@content">
-        <meta property="og:image" content="http://engstromjimmy.se/images/jimmy.png" />
+        <meta property="og:image" content= "@image" />
         <meta property="article:author" content="Jimmy Engström" />
         <meta property="og:url" content="http://engstromjimmy.se" />
         <meta property="og:site_name" content="@title" />
@@ -68,6 +72,7 @@
     public string id { get; set; }
     string title = "EngstromJimmy.se";
     string content = "";
+    string image = "http://engstromjimmy.se/images/jimmy.png";
     string date = DateTime.Now.ToUniversalTime().ToString();
     protected override async Task OnInitializedAsync()
     {
