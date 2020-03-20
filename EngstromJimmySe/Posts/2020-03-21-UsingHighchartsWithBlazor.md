@@ -1,6 +1,6 @@
 ---
 title: Using Highcharts with Blazor
-date: 2020-03-19T00:00:00.000+00:00
+date: 2020-03-22T00:00:00.000+00:00
 categories:
 - Blazor
 author: Jimmy Engström
