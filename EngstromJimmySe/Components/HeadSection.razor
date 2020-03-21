@@ -3,40 +3,41 @@
 @using EngstromJimmySe.Services
 @inject AppStateService appstate
 @inject BlogService blogService
+@inject NavigationManager navman
 
 
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
         @{
-                object oid;
-                if (routeData.RouteValues.TryGetValue("id", out oid))
+            object oid;
+            if (routeData.RouteValues.TryGetValue("id", out oid))
+            {
+                try
                 {
-                    try
+                    var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
+                    title = post.Title;
+                    content = post.GetFirstParagraph();
+                    date = post.Date.ToUniversalTime().ToString();
+                    if (!string.IsNullOrEmpty(post.Image))
                     {
-                        var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
-                        title = post.Title;
-                        content = post.GetFirstParagraph();
-                        date = post.Date.ToUniversalTime().ToString();
-                        if(!string.IsNullOrEmpty(post.Image))
-                        {
-                            image = post.Image;
-                        }
+                        image = navman.BaseUri +  post.Image;
                     }
-                    catch { }
                 }
-
-
+                catch { }
             }
-            <!--Whatever tags you want-->
+
+
+        }
+        <!--Whatever tags you want-->
         <title>@title</title>
         <!-- COMMON TAGS -->
         <meta charset="utf-8">
         <!-- Search Engine -->
-        <meta name="image" content= "@image" />
+        <meta name="image" content="@image" />
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="@title" />
         <meta itemprop="description" content="@content" />
-        <meta itemprop="image" content= "@image" />
+        <meta itemprop="image" content="@image" />
         <!-- Twitter -->
         <meta name="twitter:card" content="@content" />
         <meta name="twitter:title" content="@title" />
@@ -48,21 +49,21 @@
         <!-- Open Graph general (Facebook, Pinterest & Google+) -->
         <meta property="og:title" content="@title" />
         <meta property="og:description" content="@content">
-        <meta property="og:image" content= "@image" />
+        <meta property="og:image" content="@image" />
         <meta property="article:author" content="Jimmy Engström" />
         <meta property="og:url" content="http://engstromjimmy.se" />
         <meta property="og:site_name" content="@title" />
         <meta property="og:type" content="article" />
         <!-- Open Graph - Article -->
         @*<meta name="article:section" content="Technology">
-        <meta name="article:published_time" content="2020-03-15">
-        <meta name="article:author" content="Jimmy Engström">
-        <meta name="article:tag" content="Blazor">
-        <meta name="article:expiration_time" content="2020-03-15">
-        <meta name="article:modified_time" content="2020-03-15">*@
+            <meta name="article:published_time" content="2020-03-15">
+            <meta name="article:author" content="Jimmy Engström">
+            <meta name="article:tag" content="Blazor">
+            <meta name="article:expiration_time" content="2020-03-15">
+            <meta name="article:modified_time" content="2020-03-15">*@
     </Found>
     <NotFound>
-        
+
     </NotFound>
 </Router>
 
