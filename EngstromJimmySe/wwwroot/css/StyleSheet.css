@@ -30422,6 +30422,7 @@ main {
   margin: auto; }
 
 .postimage {
+  max-width: 100%;
   max-height: 300px;
   display: block;
   margin: auto;
