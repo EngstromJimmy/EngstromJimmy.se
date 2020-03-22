@@ -57,10 +57,8 @@ I decided to add the title into an AppState-class, simply because I will probabl
 Add a Razor-component called HeadSection.razor and add the following code:
 
 ```csharp
-        @namespace Penser.Web.Shared.Razor
         @using System.ComponentModel
-        
-        @inject PenserNet.Services.AppStateService appstate
+        @inject AppStateService appstate
         
         <!--Whatever tags you want-->
         <title>@appstate.Title</title>
@@ -86,7 +84,7 @@ Add a Razor-component called HeadSection.razor and add the following code:
 ```html
         <head>
             <base href="~/" />
-            <component type="typeof(Penser.Web.Shared.Razor.HeadSection)" render-mode="ServerPrerendered"/>
+            <component type="typeof(HeadSection)" render-mode="ServerPrerendered"/>
         </head>
 ```
 
