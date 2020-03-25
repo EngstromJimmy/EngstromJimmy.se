@@ -393,7 +393,7 @@
     <None Update="Posts\2020-03-11-ChangeTitle.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Posts\2020-03-14-ReloadBlazor - Copy.md">
+    <None Update="Posts\2020-03-14-ReloadBlazor.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Posts\2020-03-21-UsingHighchartsWithBlazor.md">
