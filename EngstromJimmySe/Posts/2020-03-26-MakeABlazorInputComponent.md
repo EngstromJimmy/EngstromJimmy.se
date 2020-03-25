@@ -1,13 +1,13 @@
 ---
 title: Make a Blazor input component
-date: 2020-03-26T00:00:00.000+00:00
+date: 2020-03-27T00:00:00.000+00:00
 categories:
 - Blazor
 author: Jimmy Engström
 tags:
 - Blazor
 # image: /PostImages/2020-03-21-UsingHighchartsWithBlazor/highcharts.PNG
-hide:true
+
 ---
 
 Creating a reusable Blazor component can speed up development and makes it easier to avoid repeating your code.
@@ -37,7 +37,9 @@ Notice that I am using the data annotations ```RegularExpression```, ```Required
 ## The Component
 
 The component should inherit from 
+
 [!code-cs[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Components/AzmInputText.razor?name=Inherits)]
+
 That way it will automatically add ```.valid``` and ```.invalid``` classes depending on the validation.
 
 ### Parameters
