@@ -25,7 +25,7 @@
 }
 else
 {
-    @foreach (var p in posts.Skip(page * pagesize).Take(pagesize))
+    @foreach (var p in posts.Where(i=>i.Hide!=true).Skip(page * pagesize).Take(pagesize))
     {
         <div class="card">
             @if (!string.IsNullOrEmpty(p.Image))

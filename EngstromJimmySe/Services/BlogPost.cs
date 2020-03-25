@@ -16,7 +16,7 @@ namespace EngstromJimmySe.Services
         public string[] Tags { get; set; }
         public string[] Categories { get; set; }
         public string Author { get; set; }
-
+        public bool Hide { get; set; }
         public bool Page { get; set; }
 
 
