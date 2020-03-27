@@ -98,7 +98,7 @@ I have copied the CSS from Bootstrap for this example, there is a much better wa
 Alright everything it all done now it is time to use the component.
 In /pages/AzmInputTextDemo.razor
 
-[!code-razor[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Pages/AzmInputTextDemo.razor)]
+[!code-cs[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Pages/AzmInputTextDemo.razor)]
 
 Nice, clean and reusable.
 
