@@ -115,10 +115,12 @@ namespace EngstromJimmySe.Services
             return Categories;
         }
 
+        bool loading = false;
         public async Task LoadPostsAsync(bool force=false)
         {
-            if (Posts.Count == 0 || force)
+            if (!loading && (Posts.Count == 0 || force))
             {
+                loading=true;
                 Posts = new List<BlogPost>();
                 var files = Directory.GetFiles("Posts");
                 foreach (var f in files)
@@ -177,6 +179,7 @@ namespace EngstromJimmySe.Services
                         }
                     }
                 }
+                loading = false;
             }
         }
     }

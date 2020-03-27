@@ -207,15 +207,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Extensions">
-      <HintPath>..\..\..\..\Users\jimmy\Downloads\docfx-dev\docfx-dev\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\bin\Debug\netstandard2.0\Microsoft.DocAsCode.MarkdigEngine.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Validators">
-      <HintPath>..\..\..\..\Users\jimmy\Downloads\docfx-dev\docfx-dev\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\bin\Debug\netstandard2.0\Microsoft.DocAsCode.MarkdigEngine.Validators.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="config.yaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -421,6 +412,10 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\PostImages\2020-03-21-UsingHighchartsWithBlazor\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\docfx\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\Microsoft.DocAsCode.MarkdigEngine.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

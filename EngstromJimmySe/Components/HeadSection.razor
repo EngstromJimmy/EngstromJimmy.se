@@ -15,10 +15,10 @@
                 try
                 {
                     var post = blogService.GetPostAsync(oid.ToString()).GetAwaiter().GetResult();
-                    title = post.Title;
-                    content = post.GetFirstParagraph();
-                    date = post.Date.ToUniversalTime().ToString();
-                    if (!string.IsNullOrEmpty(post.Image))
+                    title = post?.Title;
+                    content = post?.GetFirstParagraph();
+                    date = post?.Date.ToUniversalTime().ToString();
+                    if (!string.IsNullOrEmpty(post?.Image))
                     {
                         image = navman.BaseUri +  post.Image;
                     }

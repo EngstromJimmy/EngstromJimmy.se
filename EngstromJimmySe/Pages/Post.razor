@@ -54,7 +54,7 @@
 
         post = await blogService.GetPostAsync(id, category != null);
 
-        appstate.Title = post.Title;
+        appstate.Title = post?.Title;
 
 
         await base.OnInitializedAsync();

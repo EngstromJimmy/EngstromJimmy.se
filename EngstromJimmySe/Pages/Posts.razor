@@ -28,10 +28,10 @@ else
     @foreach (var p in posts.Where(i=>i.Hide!=true).Skip(page * pagesize).Take(pagesize))
     {
         <div class="card">
-            @if (!string.IsNullOrEmpty(p.Image))
+            @*@if (!string.IsNullOrEmpty(p.Image))
             {
                 <img class="card-img-top" src="@p.Image">
-            }
+            }*@
                 <div class="card-body">
                 <h4 class="card-title">@p.Title</h4>
                 <h6 class="card-subtitle mb-2 text-muted">

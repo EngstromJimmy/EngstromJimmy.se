@@ -1,6 +1,6 @@
 ---
 title: Make a Blazor input component
-date: 2020-03-28T00:00:00.000+00:00
+date: 2020-03-27T00:00:00.000+00:00
 categories:
 - Blazor
 author: Jimmy Engström
@@ -85,11 +85,11 @@ It will give them a Seratonin boost, and it can be as simple as adding a success
 To get the full Bootstrap experience we need to remove a couple of CSS rules from the default CSS.
 I removed these styles.
 
-[!code-csharp[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/wwwroot/css/site.css?name=RemoveCSS)]
+[!code-css[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/wwwroot/css/site.css?name=RemoveCSS)]
 
 and add the following styles
 
-[!code-csharp[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/wwwroot/css/AzmTextInput.css)]
+[!code-css[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/wwwroot/css/AzmTextInput.css)]
 
 I have copied the CSS from Bootstrap for this example, there is a much better way of solving that without copying using SASS but that is an upcoming blog post =)
 
@@ -98,7 +98,7 @@ I have copied the CSS from Bootstrap for this example, there is a much better wa
 Alright everything it all done now it is time to use the component.
 In /pages/AzmInputTextDemo.razor
 
-[!code-csharp[]https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Pages/AzmInputTextDemo.razor)]
+[!code-razor[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Pages/AzmInputTextDemo.razor)]
 
 Nice, clean and reusable.
 
