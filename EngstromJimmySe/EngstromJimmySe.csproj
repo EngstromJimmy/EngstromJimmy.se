@@ -390,6 +390,9 @@
     <None Update="Posts\2020-03-21-UsingHighchartsWithBlazor.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Posts\2020-03-28-MakeABlazorInputComponent.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Posts\Index.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
