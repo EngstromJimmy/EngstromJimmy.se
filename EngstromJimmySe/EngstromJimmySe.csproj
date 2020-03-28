@@ -415,7 +415,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\docfx\src\Microsoft.DocAsCode.MarkdigEngine.Extensions\Microsoft.DocAsCode.MarkdigEngine.Extensions.csproj" />
+    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Extensions">
+      <HintPath>Assemblies\Microsoft.DocAsCode.MarkdigEngine.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DocAsCode.MarkdigEngine.Validators">
+      <HintPath>Assemblies\Microsoft.DocAsCode.MarkdigEngine.Validators.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
