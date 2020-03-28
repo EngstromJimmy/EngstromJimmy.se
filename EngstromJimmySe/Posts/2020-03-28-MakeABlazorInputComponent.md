@@ -1,6 +1,6 @@
 ---
 title: Make a Blazor input component
-date: 2020-03-27T00:00:00.000+00:00
+date: 2020-03-28T00:00:00.000+01:00
 categories:
 - Blazor
 author: Jimmy Engström
