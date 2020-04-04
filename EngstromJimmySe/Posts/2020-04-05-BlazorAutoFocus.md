@@ -41,7 +41,7 @@ Then we check if the attribute exists and is set to ```True```
 To finish everything off you need to add the JavaScript.
 I created a file in wwwroot/js/JavaScriptInterop.js containing
 
-[!code-cs[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/Components/AzmInputText.razor?name=SetFocus)]
+[!code-js[](https://raw.githubusercontent.com/EngstromJimmy/BlazorPlayground/master/BlazorPlayground/BlazorPlayground/wwwroot/js/JavaScriptInterop.js?name=SetFocus)]
 
 and last but not least you need to add a reference to the JavaScript file in pages/_host.cshtml.
 (Right after the reference to blazor.server.js)
