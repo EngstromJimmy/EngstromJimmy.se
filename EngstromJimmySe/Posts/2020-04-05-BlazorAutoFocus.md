@@ -1,6 +1,6 @@
 ---
 title: Blazor autofocus
-date: 2020-04-04T00:00:00.000+01:00
+date: 2020-04-05T00:00:00.000+01:00
 categories:
 - Blazor
 author: Jimmy Engström
