@@ -35,7 +35,7 @@ The component creates a div with a unique name and calls the javascript with the
 
 
 ## Usage
-To use the component you'll need to supply the component with a configuration for the chart, and here is the beautiful part, you supply the component with the same JSON you can find from the documentation at http://www.highchart.com.  
+To use the component you'll need to supply the component with a configuration for the chart, and here is the beautiful part, you supply the component with the same JSON you can find from the documentation at http://www.highcharts.com.  
 No need to change anything.
 
 [!code-csharp[](https://raw.githubusercontent.com/EngstromJimmy/HighchartsUsingBlazor/master/HighchartsUsingBlazor/Pages/Index.razor)]
