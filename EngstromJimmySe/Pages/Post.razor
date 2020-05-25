@@ -16,7 +16,7 @@
 @using YamlDotNet.Core.Events;
 @using EngstromJimmySe.Services;
 
-@inject IJSRuntime JSRuntime;
+@inject IJSRuntime JSRuntime
 @inject AppStateService appstate
 
 
@@ -35,30 +35,28 @@
 @((MarkupString)post.Content)
 
 @code {
-    [Parameter] public string id { get; set; }
-    [Parameter] public string category { get; set; }
-    [Parameter] public string category2 { get; set; }
-    [Parameter] public string year { get; set; }
-    [Parameter] public string month { get; set; }
-    [Parameter] public string day { get; set; }
-    [Parameter] public string postname { get; set; }
-    [Parameter] public string html { get; set; }
-    BlogPost post { get; set; } = new BlogPost();
-    protected async override Task OnInitializedAsync()
-    {
-        if (category != null)
+        [Parameter] public string id { get; set; }
+        [Parameter] public string category { get; set; }
+        [Parameter] public string category2 { get; set; }
+        [Parameter] public string year { get; set; }
+        [Parameter] public string month { get; set; }
+        [Parameter] public string day { get; set; }
+        [Parameter] public string postname { get; set; }
+        [Parameter] public string html { get; set; }
+        BlogPost post { get; set; } = new BlogPost();
+        protected async override Task OnInitializedAsync()
         {
-            id = $"{postname.Replace(".html", "")}";
+            if (postname != null && category != null)
+            {
+                id = $"{postname.Replace(".html", "")}";
+            }
+            post = await blogService.GetPostAsync(id, category != null);
+
+            appstate.Title = post?.Title;
+        
+
+            await base.OnInitializedAsync();
         }
-
-
-        post = await blogService.GetPostAsync(id, category != null);
-
-        appstate.Title = post?.Title;
-
-
-        await base.OnInitializedAsync();
-    }
 
 
     protected override void OnAfterRender(bool firstRender)

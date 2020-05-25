@@ -396,6 +396,9 @@
     <None Update="Posts\2020-04-05-BlazorAutoFocus.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Posts\2020-05-25-NewWindow.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Posts\2020-05-08-Blazm.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

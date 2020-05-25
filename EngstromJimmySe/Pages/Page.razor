@@ -16,8 +16,10 @@
 @using EngstromJimmySe.Services;
 
 @inject BlogService blogService
-@((MarkupString)post.Content)
-
+@if (post != null)
+{
+    @((MarkupString)post.Content)
+}
 @code {
     [Parameter] public string id { get; set; }
     BlogPost post { get; set; } = new BlogPost();
