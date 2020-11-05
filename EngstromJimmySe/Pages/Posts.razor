@@ -17,56 +17,64 @@
 @using EngstromJimmySe.Services;
 
 @inject BlogService blogService
+    <center>
+        <a href="https://www.telerik.com/campaigns/blazor/free-trial-1?utm_source=jimmyengstrom&utm_medium=cpm&utm_campaign=blazor-trial-blog-sponsored-message"><img src="https://raw.githubusercontent.com/EngstromJimmy/Blazm.Components/master/TelerikRect.png" /></a>
+        <br />
+        Telerik UI for Blazor – Increase productivity and cut cost in half! <br />
+        Use the Telerik truly native Blazor UI components to cover any app scenario. <a href="https://www.telerik.com/campaigns/blazor/free-trial-1?utm_source=jimmyengstrom&utm_medium=cpm&utm_campaign=blazor-trial-blog-sponsored-message">Give it a try</a>
+    </center>
 
-@if (posts == null)
-{
 
-}
-else
-{
-    @foreach (var p in posts.Where(i=>i.Hide!=true).Skip(page * pagesize).Take(pagesize))
+
+    @if (posts == null)
     {
-        <div class="card">
-            @*@if (!string.IsNullOrEmpty(p.Image))
-            {
-                <img class="card-img-top" src="@p.Image">
-            }*@
+
+    }
+    else
+    {
+        @foreach (var p in posts.Where(i => i.Hide != true).Skip(page * pagesize).Take(pagesize))
+        {
+            <div class="card">
+                @*@if (!string.IsNullOrEmpty(p.Image))
+                    {
+                        <img class="card-img-top" src="@p.Image">
+                    }*@
                 <div class="card-body">
-                <h4 class="card-title">@p.Title</h4>
-                <h6 class="card-subtitle mb-2 text-muted">
-                    @p.Date.ToString("yyyy-MM-dd")
-                    <text> by </text>
-                    @p.Author
-                </h6>
-                <p class="card-text">@((MarkupString)p.GetFirstParagraph())</p>
-                <a href="@("post/" + p.PermaLink)" class="card-link">Read More</a>
+                    <h4 class="card-title">@p.Title</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        @p.Date.ToString("yyyy-MM-dd")
+                        <text> by </text>
+                        @p.Author
+                    </h6>
+                    <p class="card-text">@((MarkupString)p.GetFirstParagraph())</p>
+                    <a href="@("post/" + p.PermaLink)" class="card-link">Read More</a>
+                </div>
             </div>
-        </div>
 
+        }
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item @(page==0?"disabled":"")"><a class="page-link" href="#" @onclick:preventDefault @onclick="@(()=> { page--;StateHasChanged(); })">Previous</a></li>
+                <li class="page-item @(((page*pagesize)+pagesize)>totalcount?"disabled":"")"><a class="page-link" href="#" @onclick:preventDefault @onclick="@(()=> { page++;StateHasChanged(); })">Next</a></li>
+            </ul>
+        </nav>
     }
 
-    <nav aria-label="Page navigation">
-        <ul class="pagination">
-            <li class="page-item @(page==0?"disabled":"")"><a class="page-link" href="#" @onclick:preventDefault @onclick="@(()=> { page--;StateHasChanged(); })">Previous</a></li>
-            <li class="page-item @(((page*pagesize)+pagesize)>totalcount?"disabled":"")"><a class="page-link" href="#" @onclick:preventDefault @onclick="@(()=> { page++;StateHasChanged(); })">Next</a></li>
-        </ul>
-    </nav>
-}
 
+    @code {
 
-@code {
+        [Parameter] public string SearchTerm { get; set; }
+        List<BlogPost> posts;
+        int pagesize = 10;
+        int page = 0;
+        int totalcount = 0;
+        protected async override Task OnInitializedAsync()
+        {
 
-    [Parameter] public string SearchTerm { get; set; }
-    List<BlogPost> posts;
-    int pagesize = 10;
-    int page = 0;
-    int totalcount = 0;
-    protected async override Task OnInitializedAsync()
-    {
+            posts = await blogService.GetPostsAsync(SearchTerm);
+            totalcount = posts.Count();
+            await base.OnInitializedAsync();
+        }
 
-        posts = await blogService.GetPostsAsync(SearchTerm);
-        totalcount = posts.Count();
-        await base.OnInitializedAsync();
     }
-
-}
