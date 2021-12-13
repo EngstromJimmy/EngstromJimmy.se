@@ -13,17 +13,15 @@ Presentation skills are something I am very passionate about and I coach speaker
 
 ## Bio
 
-Ever since Jimmy got his first ZX Spectrum at the age of 7 he hasn't stopped programming.  
-During the day he is a .NET developer and he does all the fun stuff during his spare time.  
-Together with his wife he also runs a company "azm dev" which is focused on HoloLens and Windows development.  
-He is passionate about Windows development, HoloLens or well you could say the .NET platform.  
-He and his wife (Jessica) also runs a code-intensive user group (Coding After Work) that focuses on helping participants with code and design problems and a podcast with the same name.  
-Back in 2011, he received the "geek of the year" award, a title well deserved.  
-He is certainly living up to the title with everything from developing and gadgets to superheroes and cosplay at the sci-fi fair.  
-He speaks at various types of events including NDC, Devsum, hackathons, Swetugg and TechDays which led to him becoming a Microsoft MVP in Windows Development.
+Jimmy Engström has been developing ever since he was 7 years old and got his first computer.
+He loves to be on the cutting edge of technology, trying new things.
+When he got wind of Blazor, he immediately realized the potential and adopted it already when it was in beta. He has been running Blazor in production since it was launched by Microsoft.  
+He is the author of "Web Development with Blazor" and the co-host of Coding After Work (podcast and stream).  
+His passion for the .NET industry and community has taken him around the world, speaking about development. Microsoft has recognized this passion by awarding him the
+Microsoft Most Valuable Professional award 8 years in a row.  
 
-Blog: http://www.engstromjimmy.se  
-Podcast: http://www.codingafterwork.se  
+Blog: http://www.engstromjimmy.com
+Podcast: http://www.codingafterwork.com
 
 ## Images
 
