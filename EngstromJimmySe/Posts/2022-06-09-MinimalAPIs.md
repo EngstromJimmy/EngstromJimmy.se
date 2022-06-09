@@ -10,7 +10,6 @@ tags:
 
 ---
  
-# Using Minimal API in larger APIs
 I have heard from multiple people that Minimal APIs should only be used if your project is quite small. 
 If you have a lot of API endpoints then it would be probably better to use controllers.
 One of the biggest selling points of minimal APIs is that you can have all the APIs in one file, less ceremony, and quicker to set up.
@@ -52,4 +51,6 @@ Then we simply call the extension method from inside program.cs to set everythin
 app.MapCustomerEndpoints();
 ```
 
-Using this method we don't add that much complexity to the project, get a cleaner program.cs, and can make use of the amazing Minimal API functionality.
+Using this method we don't add that much complexity to the project, get a cleaner program.cs, and can make use of the amazing Minimal API functionality.  
+
+Check out this repo to see the full implementation: https://github.com/EngstromJimmy/MinimalApiDemo
