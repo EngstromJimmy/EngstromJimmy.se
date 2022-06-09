@@ -396,6 +396,9 @@
     <None Update="Posts\2020-04-05-BlazorAutoFocus.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Posts\2022-06-09-MinimalAPIs.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Posts\2020-11-26-CustomCssClassProvider.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

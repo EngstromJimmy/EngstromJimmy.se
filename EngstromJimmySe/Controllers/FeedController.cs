@@ -18,7 +18,7 @@ namespace EngstromJimmySe.Controllers
         public FeedController(BlogService blogService, AppStateService appStateService)
         {
             this.blogService = blogService;
-            this.appStateService = appStateService;
+            this.appStateService = appStateService;  
         }
 
         [ResponseCache(Duration = 1200)]
