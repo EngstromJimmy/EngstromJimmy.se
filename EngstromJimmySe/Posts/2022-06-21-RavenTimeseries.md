@@ -28,7 +28,7 @@ We use Raven to store our conferences and the ability to add time series for the
 We want to store a value for each day of the conference, so a time series felt like the perfect choice for this.
 The first thing we need to to is defining a class with the data we want to store in the time series, it can store double values (up to 32).
 
-```CSharp
+```csharp
 public class WeatherData
 {
     [TimeSeriesValue(0)]
@@ -45,7 +45,6 @@ public class WeatherData
 In program.cs, we set up our connection to Raven, and there we also register the time series.
 
 ```csharp
-
  builder.Services.AddSingleton<IDocumentStore>(ctx =>
  {
      var store = new DocumentStore
@@ -60,7 +59,6 @@ In program.cs, we set up our connection to Raven, and there we also register the
   	 // Add index here later
      return store;
  });
-
 ```
 
 ## Storing the data
