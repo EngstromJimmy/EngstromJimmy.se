@@ -1,5 +1,5 @@
 ---
-title: Using Tailwind with Blazor
+title: Using Tailwind CLI with Blazor and Isolated CSS
 date: 2022-10-02T00:00:00.000+01:00
 categories:
 - Blazor
@@ -9,7 +9,7 @@ tags:
 # image: /PostImages/2020-03-21-UsingHighchartsWithBlazor/highcharts.PNG
 
 ---
-#Using Tailwind with Blazor
+
 This is a draft of a blog post about using Tailwind with Blazor. I will update this post as I go along.
 This blog post will be published on my blog https://engstromjimmy.com/
 
