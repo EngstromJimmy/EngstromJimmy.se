@@ -10,9 +10,6 @@ tags:
 
 ---
 
-This is a draft of a blog post about using Tailwind with Blazor. I will update this post as I go along.
-This blog post will be published on my blog https://engstromjimmy.com/
-
 ## The problem?
 Back in the day when I learned CSS, it was a big thing not to repeat yourself. you should have all the styles in one central place.
 Then came isolated CSS, which simply meant we writing CSS for one single component and the styles will not affect anything else on the site.
@@ -234,9 +231,6 @@ button {
 }
 ```
 
-The base of this Tailwind implementation is borrowed from Chris Sainty.
-You can find his repo [here](["https://github.com/chrissainty/ondotnet-tailwindcss"]).
-
 ## Conclusion
 I'll be honest I am still not a fan, but I think that since we can remove some of my pain points perhaps one day, I will start working with it =)
 It feels a bit like I am going out of my way to remove the dependency on NPM, and if you don't mind NPM you should continue to use it.
@@ -246,8 +240,13 @@ I hope you enjoyed this article and that it will help you in your journey with T
 The internet is divided on this topic, so I would love to hear your thoughts on this.
 
 ### Resources
+The base of this Tailwind implementation is borrowed from Chris Sainty.
+You can find his repo [here](["https://github.com/chrissainty/ondotnet-tailwindcss"]).
+
 https://learn.microsoft.com/en-us/visualstudio/msbuild/downloadfile-task?view=vs-2022
 
 https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022
+
+https://github.com/EngstromJimmy/BlazorTailwindTest
 
 
