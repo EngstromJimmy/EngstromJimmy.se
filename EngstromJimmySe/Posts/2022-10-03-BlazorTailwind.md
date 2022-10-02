@@ -237,10 +237,17 @@ button {
 The base of this Tailwind implementation is borrowed from Chris Sainty.
 You can find his repo [here](["https://github.com/chrissainty/ondotnet-tailwindcss"]).
 
-# Conclusion
+## Conclusion
 I'll be honest I am still not a fan, but I think that since we can remove some of my pain points perhaps one day, I will start working with it =)
 It feels a bit like I am going out of my way to remove the dependency on NPM, and if you don't mind NPM you should continue to use it.
 You can still use isolated CSS but use NPM commands instead of Tailwind CLI.
 
 I hope you enjoyed this article and that it will help you in your journey with Tailwind CSS.
 The internet is divided on this topic, so I would love to hear your thoughts on this.
+
+### Resources
+https://learn.microsoft.com/en-us/visualstudio/msbuild/downloadfile-task?view=vs-2022
+
+https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-targets?view=vs-2022
+
+
