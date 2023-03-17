@@ -30,3 +30,7 @@ The essential Visual Studio extension for developers and presenters who want to 
 This has helped me for many years, and now it's time to release it into the world =D  
 
 
+Check out   
+<a href="https://stagecoder.com">Stagecoder.com</a>  
+<a href="https://marketplace.visualstudio.com/items?itemName=EngstromJimmy.StageCoder">Visual Studio Marketplace</a>  
+
