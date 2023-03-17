@@ -10,9 +10,9 @@ tags:
 
 ---
 
-<iframe width="852" height="479" src="https://www.youtube.com/embed/UWVZDyYRrkE" title="Introducing StageCoder - a Visual Studio Extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/UWVZDyYRrkE" title="Introducing StageCoder - a Visual Studio Extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Are you tired of manually typing out code snippets or bringing in snippets of code that adds complexity, during presentations, workshops, or classes?  
+Are you tired of manually typing out code snippets bringing in snippets of code that adds complexity, during presentations, workshops, or classes?  
 Do you want to showcase your code more efficiently and impress your audience with your programming skills? Look no further than this incredible Visual Studio extension that takes typing to the next level!  
 
 With this extension, you can easily create code snippets by selecting some code and naming the snippet.   
