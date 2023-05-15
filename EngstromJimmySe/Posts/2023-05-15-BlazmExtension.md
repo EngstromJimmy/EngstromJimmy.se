@@ -1,5 +1,5 @@
 ---
-title: Supercharging Blazor Development with BlazmExtension: A New Visual Studio Extension
+title: Supercharging Blazor Development with BlazmExtension - A New Visual Studio Extension
 date: 2023-05-14T00:00:00.000+01:00
 categories:
 - Blazor
