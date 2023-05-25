@@ -70,8 +70,17 @@ Right-click on the component.razor.cs file and select "Move code-behind to razor
 This feature is in beta. I hope I have managed to cover all the edge cases, but if you find any bugs, please let me know.
 
 ## Generic features
+### Switching files
 Switching files between razor and code-behind is common, and I wanted to make it as easy as possible.
 By pressing CTRL + ALT + N  (N for Next file), you can switch between the razor file and the code-behind file (or any nested files).
+
+### Blazor Routes
+In a large project, it can be hard to keep track of all the routes.
+I wanted to be able to see all the routes in one place, so I created a new window called Blazor Routes.
+You can open the window by going to Extensions -> Blazm-> Show Blazor Routes.
+The window will show all the routes in your project, and you can double-click on a route to open the file.
+
+<img src="https://github.com/EngstromJimmy/Blazm.Extension/blob/main/Images/Routes.png?raw=true" width="400">
 
 ## Conclusion
 I hope you find this extension useful.
