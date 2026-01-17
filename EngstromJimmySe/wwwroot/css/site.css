@@ -5,6 +5,10 @@
 
 /*My Styles*/
 
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
 .video {
     width: 100%;
     height: 0;

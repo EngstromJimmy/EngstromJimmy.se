@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>.NET7</TargetFramework>
+    <TargetFramework>.NET10.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -201,11 +201,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazor-Analytics" Version="3.0.0" />
-    <PackageReference Include="Markdig" Version="0.18.3" />
-    <PackageReference Include="Markdig.SyntaxHighlighting" Version="1.1.7" />
-    <PackageReference Include="System.ServiceModel.Syndication" Version="4.7.0" />
-    <PackageReference Include="YamlDotNet" Version="8.1.0" />
+    <PackageReference Include="Blazor-Analytics" Version="4.0.0" />
+    <PackageReference Include="Markdig" Version="0.44.0" />
+    <PackageReference Include="Nodsoft.Markdig.SyntaxHighlighting" Version="1.0.12" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="10.0.2" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -396,6 +396,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Posts\2020-04-05-BlazorAutoFocus.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Posts\2025-01-17-RazorCohost.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Posts\2023-05-15-BlazmExtension.md">

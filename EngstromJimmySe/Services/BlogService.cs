@@ -3,7 +3,7 @@ using Markdig;
 using Markdig.Extensions.Yaml;
 using Markdig.Renderers;
 using Markdig.Syntax;
-using Markdig.SyntaxHighlighting;
+using Nodsoft.Markdig.SyntaxHighlighting;
 //using Markdig.SyntaxHighlighting;
 using Microsoft.DocAsCode.MarkdigEngine.Extensions;
 using System;
@@ -44,9 +44,9 @@ namespace EngstromJimmySe.Services
             pipeline = new MarkdownPipelineBuilder()
                  .UseAdvancedExtensions()
                  .UseYamlFrontMatter()
-                 .UseInteractiveCode()
-                 .UseSyntaxHighlighting()
-                 .UseDocfxExtensions(markdownContext)
+                 //.UseInteractiveCode()
+                 //.UseSyntaxHighlighting()
+                 //.UseDocfxExtensions(markdownContext)
                  .Build();
           
 
