@@ -57,6 +57,10 @@ So for C# tooling to work, Razor has to do this dance:
 Every one of these steps adds latency and increases the chances of things going wrong.  
 A Razor file might be 20 lines, while the generated C# file might be hundreds of lines. Most of those lines are not “your code”. They are infrastructure code that enables rendering. So even diagnostics are tricky. Roslyn might report an error in line 300 of generated C#, and Razor has to decide: is this actually the user’s code, can we map it to a real location in the Razor file, or is it in an invisible generated area? Sometimes that is why you see the whole document squiggled. The error is real, the project will not build, but the source location is not something you can see directly.  
 
+<image src="\PostImages\2026\Razor Cohosted Before.png" class="center"/>
+
+In reality, this is even more complex. LSP messages cannot go from one Language Server to another, but instead most go through the editor to make those calls. So instead of Razor Language Server directly reaching out to the HTML Language Server or the C# Language Server, it sends the request back to Visual Studio, which then routes it to the appropriate server. This adds even more latency and complexity to the process.
+
 ## The part that really hurt, syncing two separate worlds  
 The hardest problem was not one specific feature. It was synchronization.  
 Razor and Roslyn were separate systems. Razor produced generated C# and had to keep Roslyn up to date with it, so Roslyn could answer questions correctly. But LSP document change messages are basically fire-and-forget. You send updates, and you do not get a meaningful “yep, we are in sync” back. So if anything drifted, even by a little, Razor thought the generated C# looked one way, and Roslyn thought it looked another way. Now the mapping breaks down, and the editor experience gets weird. This is also why restarting Visual Studio could “fix” things. Most of us have seen this. Restarting forces both sides back into a clean, consistent state.  
@@ -91,6 +95,8 @@ A lot of the speedup isn't the result of a big performance project. It’s simpl
 ### Reliability
 
 This is the big one. If Razor and Roslyn share the same immutable snapshot model, the “we drifted out of sync” class of issues becomes much harder to hit. That should mean fewer cases where tooling feels random, and fewer times where “restart Visual Studio” is the fix. I’m not going to pretend it removes every bug, but it removes a whole category of problems that existed because of architecture, not because someone wrote a bad if statement.
+
+<image src="\PostImages\2026\Razor Cohosted After.png" class="center"/>
 
 ## What this unlocks long-term
 Once Razor lives inside Roslyn’s world, it can use Roslyn in a richer way. Before, the bridge between them was LSP: strings, messages, serialization.
