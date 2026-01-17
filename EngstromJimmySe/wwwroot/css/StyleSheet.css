@@ -6,6 +6,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+
+html, body {
+    font-size: 18px !important;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
 :root {
   --blue: #DF691A;
   --indigo: #6610f2;

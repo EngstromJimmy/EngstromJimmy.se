@@ -57,7 +57,7 @@ So for C# tooling to work, Razor has to do this dance:
 Every one of these steps adds latency and increases the chances of things going wrong.  
 A Razor file might be 20 lines, while the generated C# file might be hundreds of lines. Most of those lines are not “your code”. They are infrastructure code that enables rendering. So even diagnostics are tricky. Roslyn might report an error in line 300 of generated C#, and Razor has to decide: is this actually the user’s code, can we map it to a real location in the Razor file, or is it in an invisible generated area? Sometimes that is why you see the whole document squiggled. The error is real, the project will not build, but the source location is not something you can see directly.  
 
-<image src="\PostImages\2026\Razor Cohosted Before.png" class="center"/>
+<image src="\PostImages\2026\Razor Cohosted Before.png" class="center" style="min-he"/>
 
 In reality, this is even more complex. LSP messages cannot go from one Language Server to another, but instead most go through the editor to make those calls. So instead of Razor Language Server directly reaching out to the HTML Language Server or the C# Language Server, it sends the request back to Visual Studio, which then routes it to the appropriate server. This adds even more latency and complexity to the process.
 
