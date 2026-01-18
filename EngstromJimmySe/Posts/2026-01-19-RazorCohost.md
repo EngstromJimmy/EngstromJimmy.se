@@ -1,6 +1,6 @@
 ---
 title: "Why Hot Reload got better: Razor co-hosting explained"
-date: 2025-01-17T00:00:00.000+01:00
+date: 2026-01-19T00:00:00.000+01:00
 categories:
 - Blazor
 author: Jimmy Engström
@@ -11,7 +11,7 @@ tags:
 ---
 
 
-I had a chat with David Wengier about Razor co-hosting. I’d heard the term before, but I didn’t really get what it meant in practice. After David explained it, it finally clicked, and once it clicks, you start seeing why Razor tooling has been such a tricky problem for so long. What really made it click for me was understanding why this change directly affects Hot Reload, making it faster and far more reliable than before.  
+I had a chat with [David Wengier](https://www.linkedin.com/in/davidwengier/) about Razor co-hosting. I’d heard the term before, but I didn’t really get what it meant in practice. After David explained it, it finally clicked, and once it clicks, you start seeing why Razor tooling has been such a tricky problem for so long. What really made it click for me was understanding why this change directly affects Hot Reload, making it faster and far more reliable than before.  
 This post is a write-up of that conversation, plus the diagram we talked through, and why this matters both for day-to-day dev work and for the long run, including Hot Reload.  
 
 ## Razor tooling is not “just Razor”  
@@ -59,7 +59,7 @@ A Razor file might be 20 lines, while the generated C# file might be hundreds of
 
 <image src="\PostImages\2026\Razor Cohosted Before.png" class="center" style="min-he"/>
 
-In reality, this is even more complex. LSP messages cannot go from one Language Server to another, but instead most go through the editor to make those calls. So instead of Razor Language Server directly reaching out to the HTML Language Server or the C# Language Server, it sends the request back to Visual Studio, which then routes it to the appropriate server. This adds even more latency and complexity to the process.
+In reality, this is even more complex. LSP messages cannot go from one Language Server to another, but instead they go through the editor to make those calls. So instead of Razor Language Server directly reaching out to the HTML Language Server or the C# Language Server, it sends the request back to Visual Studio, which then routes it to the appropriate server. This adds even more latency and complexity to the process.
 
 ## The part that really hurt, syncing two separate worlds  
 The hardest problem was not one specific feature. It was synchronization.  
