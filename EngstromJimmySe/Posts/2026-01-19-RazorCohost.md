@@ -112,7 +112,7 @@ Because now, when you are editing:
 •	The output already matches what the build pipeline expects
 So when you hit F5 or trigger Hot Reload, you are not switching to a totally different world. Hot Reload gets better not because it was rewritten, but because the system underneath it is no longer fighting itself.
 
-### Closing thoughts
+## Closing thoughts
 
 This is one of those changes that does not give us a new API to call or a new syntax feature to blog about.
 But it’s foundational.
